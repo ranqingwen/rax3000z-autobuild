@@ -9,13 +9,13 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     
-    - name: 删除工作流
+    - name: 删除workflow，清理工作流，保留最近的5天记录
       uses: GitRML/delete-workflow-runs@main
       with:
         retain_days: 5
         keep_minimum_runs: 0
     
-    - name: 删除旧的Releases
+    - name: 删除releases，清理旧版本，保留5个版本
       uses: dev-drprasad/delete-older-releases@v0.2.0
       with:
         keep_latest: 5

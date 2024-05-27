@@ -30,9 +30,9 @@ on:
         default: true
         type: boolean
       APP_MTK:
-        description: '使用OpenWrt原生无线控制界面'
-        required: true
-        default: true
+        description: '使用旧的luci-app-mtk无线配置工具'
+        required: false
+        default: false
         type: boolean
       NO_DOCKERMAN:
         description: '不编译dockerman'

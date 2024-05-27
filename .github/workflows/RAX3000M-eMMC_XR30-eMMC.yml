@@ -15,32 +15,32 @@ on:
   workflow_dispatch:
     inputs:
       MAC_ORDER:
-        description: 'Use the original MAC address order'
+        description: '恢复原厂MAC地址顺序'
         required: true
         default: true
         type: boolean
       EEPROM:
-        description: 'Use nx30pro eeprom'
+        description: '使用nx30pro的高功率eeprom'
         required: true
         default: true
         type: boolean
       EMMC_52MHZ:
-        description: 'eMMC use 52MHz max-frequency'
+        description: '设置eMMC频率52MHz编译'
         required: true
-        default: false
+        default: true
         type: boolean
       APP_MTK:
-        description: 'Use luci-app-mtk wifi config'
+        description: '使用mtwifi-cfg配置工具'
         required: true
         default: false
         type: boolean
       NO_DOCKERMAN:
-        description: 'Not build luci-app-dockerman'
+        description: '不编译dockerman'
         required: true
         default: false
         type: boolean
       ssh:
-        description: 'SSH connection to Actions'
+        description: 'SSH远程配置固件'
         required: false
         default: 'false'
 #  schedule:

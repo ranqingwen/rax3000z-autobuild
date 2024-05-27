@@ -1,4 +1,4 @@
-name: delete-older-releases
+name: 删除workflow，删除releases
 on:
   workflow_dispatch:
 #  schedule:

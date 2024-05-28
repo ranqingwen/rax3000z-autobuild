@@ -14,6 +14,7 @@ jobs:
       with:
         retain_days: 1
         keep_minimum_runs: 0
+        retain_min: 1
     
     - name: 删除旧的Releases
       uses: dev-drprasad/delete-older-releases@v0.2.0

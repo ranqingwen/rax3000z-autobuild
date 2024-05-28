@@ -22,3 +22,4 @@ git clone https://github.com/gdy666/luci-app-lucky package/luci-app-lucky
 git clone https://github.com/gdy666/luci-app-lucky package/luci-i18n-lucky-zh-cn
 git clone https://github.com/coolsnowwolf/packages/tree/master/net package/phtunnel
 git clone https://github.com/coolsnowwolf/luci/tree/master/applications package/luci-app-phtunnel
+git clone https://github.com/linkease/nas-packages-luci/tree/main/luci package/luci-app-quickstart

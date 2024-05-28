@@ -17,5 +17,6 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 #git clone https://github.com/messense/aliyundrive-webdav package/messense
-echo 'src-git lucky https://github.com/gdy666/luci-app-lucky' >>feeds.conf.default
-git clone https://github.com/sirpdboy/luci-app-lucky.git package/lucky
+git clone https://github.com/gdy666/luci-app-lucky package/lucky
+git clone https://github.com/gdy666/luci-app-lucky package/luci-app-lucky
+git clone https://github.com/gdy666/luci-app-lucky package/luci-i18n-lucky-zh-cn

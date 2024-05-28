@@ -1,36 +1,24 @@
 name: 删除workflow，删除releases
 on:
-# 定时触发开启开始编译(把下面两个#去掉开启,时间设置请看定时开启编译说明)
-#  schedule:
-#   - cron: 50 23 * * 4
-
-#50 23 * * 4 解释如下：
-#50 23：表示小时和分钟，即23时50分，也就是每天的午夜（23:50）UTC时间
-#* *：表示每个月的每一天。
-#4：表示星期几，其中数字4代表星期四。
-#在每个星期四的午夜（也就是星期四的晚上）执行任务。
   workflow_dispatch:
-
+#  schedule:
+#    - cron: 0 16 * * *
+    
 jobs:
-  del_workflow:
-    runs-on: Ubuntu-22.04
-    name: delete-workflow-runs
+  del_runs:
+    runs-on: ubuntu-20.04
     steps:
     
-      - name: 删除workflow，清理工作流
-        uses: Mattraks/delete-workflow-runs@v2
-        with:
-          token: ${{ secrets.REPO_TOKEN }}
-          repository: ${{ github.repository }}
-          retain_days: ${{ env.RETAIN_DAYS }}
-          keep_minimum_runs: 0
-
+    - name: 删除workflow，清理工作流，保留最近的5天记录
+      uses: GitRML/delete-workflow-runs@main
+      with:
+        retain_days: 1
+        keep_minimum_runs: 0
     
-      - name: 删除releases，清理旧版本，保留0个版本
-        uses: dev-drprasad/delete-older-releases@v0.2.0
-        with:
-          repo: ${{ github.repository }}
-          keep_latest: 0
-          delete_tags: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+    - name: 删除releases，清理旧版本，保留1个版本
+      uses: dev-drprasad/delete-older-releases@v0.2.0
+      with:
+        keep_latest: 1
+        delete_tags: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

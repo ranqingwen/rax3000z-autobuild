@@ -330,10 +330,15 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: 删除过时工作流程
-      uses: Mattraks/delete-workflow-runs@v2
+    - name: 清理releases
+      continue-on-error: true
+      if: env.REPO_TOKEN
+      uses: ophub/delete-releases-workflows@main
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        repository: ${{ github.repository }}
-        retain_days: 0
-        keep_minimum_runs: 0
+        delete_releases: true
+      #releases_keep_keyword: targz/Update
+        releases_keep_latest: 1
+        delete_tags: true
+        delete_workflows: true
+        workflows_keep_day: 7
+        gh_token: ${{ secrets.REPO_TOKEN }}

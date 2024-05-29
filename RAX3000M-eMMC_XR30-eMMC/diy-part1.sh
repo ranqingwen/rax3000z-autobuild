@@ -25,6 +25,8 @@ git clone https://github.com/sbwml/luci-app-airconnect package/luci-app-airconne
 git clone https://github.com/ranqingwen/package package/luci-app-wrtbwmon
 git clone https://github.com/ranqingwen/package package/phtunnel
 git clone https://github.com/ranqingwen/package package/luci-app-phtunnel
+git clone https://github.com/ranqingwen/package package/taskd
+git clone https://github.com/ranqingwen/package package/luci-lib-taskd
 git clone https://github.com/ranqingwen/package package/luci-app-store
 git clone https://github.com/ranqingwen/package package/quickstart
 git clone https://github.com/ranqingwen/package package/luci-app-quickstart

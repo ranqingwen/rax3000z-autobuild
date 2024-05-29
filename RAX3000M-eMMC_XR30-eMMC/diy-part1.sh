@@ -17,10 +17,10 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 #git clone https://github.com/messense/aliyundrive-webdav package/messense
-echo 'src-git phtunnel https://github.com/coolsnowwolf/packages/tree/master/net package/phtunnel' >>feeds.conf.default
-echo 'src-git luci-app-phtunnel https://github.com/coolsnowwolf/luci/tree/master/applications package/luci-app-phtunnel' >>feeds.conf.default
-echo 'src-git luci-app-quickstart https://github.com/linkease/nas-packages-luci/tree/main/luci package/luci-app-quickstart' >>feeds.conf.default
-echo 'src-git luci-app-serverchan https://github.com/coolsnowwolf/luci/tree/master/applications package/luci-app-serverchan' >>feeds.conf.default
+#echo 'src-git phtunnel https://github.com/coolsnowwolf/packages/tree/master/net package/phtunnel' >>feeds.conf.default
+#echo 'src-git luci-app-phtunnel https://github.com/coolsnowwolf/luci/tree/master/applications package/luci-app-phtunnel' >>feeds.conf.default
+#echo 'src-git luci-app-quickstart https://github.com/linkease/nas-packages-luci/tree/main/luci package/luci-app-quickstart' >>feeds.conf.default
+#echo 'src-git luci-app-serverchan https://github.com/coolsnowwolf/luci/tree/master/applications package/luci-app-serverchan' >>feeds.conf.default
 git clone https://github.com/gdy666/luci-app-lucky package/lucky
 git clone https://github.com/gdy666/luci-app-lucky package/luci-app-lucky
 git clone https://github.com/gdy666/luci-app-lucky package/luci-i18n-lucky-zh-cn

@@ -22,9 +22,9 @@ git clone https://github.com/gdy666/luci-app-lucky package/luci-app-lucky
 git clone https://github.com/gdy666/luci-app-lucky package/luci-i18n-lucky-zh-cn
 git clone https://github.com/sbwml/luci-app-airconnect package/airconnect
 git clone https://github.com/sbwml/luci-app-airconnect package/luci-app-airconnect
-#git clone https://github.com/brvphoenix/luci-app-wrtbwmon package/luci-app-wrtbwmon
-git clone https://github.com/ranqingwen/phtunnel package/phtunnel
-git clone https://github.com/ranqingwen/phtunnel package/luci-app-phtunnel
-git clone https://github.com/ranqingwen/luci package/quickstart
-git clone https://github.com/ranqingwen/luci package/luci-app-quickstart
-#git clone https://github.com/coolsnowwolf/luci/tree/master/ package/luci-app-serverchan
+git clone https://github.com/ranqingwen/package package/luci-app-wrtbwmon
+git clone https://github.com/ranqingwen/package package/phtunnel
+git clone https://github.com/ranqingwen/package package/luci-app-phtunnel
+git clone https://github.com/ranqingwen/package package/quickstart
+git clone https://github.com/ranqingwen/package package/luci-app-quickstart
+git clone https://github.com/ranqingwen/package package/luci-app-serverchan
